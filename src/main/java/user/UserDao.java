@@ -2,7 +2,7 @@ package user;
 
 import java.util.Optional;
 
-import javax.persistence.NoResultException;
+import jakarta.persistence.NoResultException;
 
 import com.google.inject.persist.Transactional;
 

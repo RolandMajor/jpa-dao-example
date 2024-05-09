@@ -1,9 +1,8 @@
 package guice;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
-
 import com.google.inject.persist.PersistService;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 @Singleton
 public class JpaInitializer {

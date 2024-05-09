@@ -4,12 +4,12 @@ import java.lang.reflect.ParameterizedType;
 import java.util.List;
 import java.util.Optional;
 
-import javax.inject.Inject;
 
-import javax.persistence.EntityManager;
-import javax.persistence.TypedQuery;
 
 import com.google.inject.persist.Transactional;
+import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 
 public abstract class GenericJpaDao<T> {
 

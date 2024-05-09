@@ -1,6 +1,6 @@
 package user.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 
 import lombok.*;
@@ -10,6 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "MyUser")
 public class User {
 
     @Id

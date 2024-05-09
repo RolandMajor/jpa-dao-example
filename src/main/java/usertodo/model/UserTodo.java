@@ -1,6 +1,6 @@
 package usertodo.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;

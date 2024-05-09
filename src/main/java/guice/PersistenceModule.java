@@ -2,6 +2,7 @@ package guice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.persist.jpa.JpaPersistModule;
+import com.google.inject.persist.jpa.JpaPersistOptions;
 
 public class PersistenceModule extends AbstractModule {
 
@@ -13,7 +14,8 @@ public class PersistenceModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        install(new JpaPersistModule(jpaUnit));
+        JpaPersistOptions options = JpaPersistOptions.builder().setAutoBeginWorkOnEntityManagerCreation(true).build();
+        install(new JpaPersistModule(jpaUnit, options));
         bind(JpaInitializer.class).asEagerSingleton();
     }
 
